@@ -6,7 +6,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Third Web Page</title>
 </head>
-<body>
+<body> 
+
+    <!-- Container to wrap everything -->
     
-</body>
+    <div id="container">
+    
+        <!-- Brand of the website -->
+    <header>My Web Site Brand</header>
+    <!-- Main Navigation -->
+    <nav>
+        <ul>
+            <li><a href="index.html" >Home</a></li>
+            <li><a href="page2.html" >About</a></li>
+            <li>Gallery</li>
+            <li><a href="page3.html" >Contact</a></li>
+        </ul>
+    </nav> 
+    <!-- End of main navigation  -->
+    
+    
+    <!-- Main Content  -->
+    
+    <main>    
+    <h1>My Third Heading</h1>
+    <p>My Third paragraph</p>
+    <img src="/central_park.jpg" alt="Central Park" width="500">
+    
+    <form action="/signup" method="post">
+    <fieldset> 
+            <legend>User Personal Information</legend>
+            <label> Enter your full Name</label><br>
+            <input type="text" name="name"><br>
+            <label>Enter your Email</label><br>
+            <input type="text" name="email"><br>
+            <label>Enter your Phone</label><br>
+            <input type="text" name="phone"><br>
+            <br>
+            <label>Select your gender</label><br>
+            <input type="radio" name="gender" value="male"/>Male 
+            <input type="radio" name="gender" value="female"/>Female <br/>
+            <br>
+            <label>How should we contact you</label><br>
+            <select>
+                <option>Email</option>
+                <option>Phone</option>
+            </select><br>
+
+            <br> Tell us the reason ofyour visit today: <br>
+            <textarea cols="30" rows="5"></textarea><br>
+            <input type="submit" value="sign-up">
+    </fieldset>
+    </form>
+
+
+
+
+    </main>
+    <!-- End of Main Content -->
+    
+    
+    <!-- Footer Information  -->
+    <footer>&copy; Copyright 2020</footer>
+    
+    </div>
+    <!-- End of container  -->
+    
+    </body>
+    
 </html>
