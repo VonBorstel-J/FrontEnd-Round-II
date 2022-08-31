@@ -1,3 +1,11 @@
+p { 
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1, h2, h3 { 
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 header {
     width: 100%;
     min-height: 400px;
@@ -117,15 +125,76 @@ th,td {
     border: solid 1px #852B1B;
 }
 
+th:first-child { 
+    width: 125px;
+    height: 50px;
+    background: #4977D1;
+    color: #fff;
+}
+
+
+td:first-child {
+    font-weight: bold;
+    background: #BDE1FF;
+}
+
 tr {  
     font-family: Arial, Helvetica, sans-serif;
 }
 
 
+/* Contact Page Styling */
 
 
+#contactT { 
+    color: #9ed034;
+}
+
+#cPhone { 
+    color: grey;
+    font-size: small;
+    display: inline-block;
+}
+
+#cEmail { 
+    color: grey;
+    font-size: small;
+    display: inline-block;
+}
 
 
+fieldset{ 
+    border: 1px solid auto;
+    border-color: #9ed034;
+    background-color: rgba(211, 211, 211, 0.288);
+    border-radius: 10px;
+}
+
+legend { 
+    color: #4977D1;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+.formContent { 
+    display: inline-block;
+    margin: 10px;
+}
+
+label{
+    display: block;
+}
+
+input[type=text], name {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+            }
 
 
 
@@ -135,6 +204,7 @@ tr {
 section {
     width: 100%;
     background-color: #4288C3;
+    margin-top: 100px;
 }
 
 section #partners {
