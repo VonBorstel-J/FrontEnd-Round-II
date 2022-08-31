@@ -9,6 +9,16 @@ header {
     background-size: 100%;
 }
 
+#contact header { 
+    background: no-repeat lightgrey url(/images/runfly.jpg);
+    background-size: 100%;
+}
+
+#activities header { 
+    background: no-repeat lightgrey url(/images/cliff_rock.jpg);
+    background-size: 100%;
+}
+
 .main-header {
     background-color: rgb(255, 255, 255, 0.8);
     width: 700px;
@@ -74,6 +84,52 @@ header {
     font-weight: bolder;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Activites Styling */ 
+
+table { 
+    width: 1000px;
+    margin: 4em auto 0 auto; 
+}
+
+caption { 
+    background: #852B1B;
+    height: 40px;
+    color: #fff;
+    font-size: 1.3em;
+    font-weight: bold;
+    padding-top: 1em;
+}
+
+thead { 
+    background: #BDE1FF;
+}
+
+tbody { 
+    background: #EEFFE6;
+    text-align: center;
+}
+
+th,td { 
+    width: 225px;
+    height: 75px;
+    vertical-align: middle;
+    border: solid 1px #852B1B;
+}
+
+tr {  
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
 
 /* Partners */
 section {
