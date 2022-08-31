@@ -1,0 +1,165 @@
+header {
+    width: 100%;
+    min-height: 400px;
+    padding-top: 3em;
+}
+
+#home header {
+    background: no-repeat lightgrey url(/images/cliff_ocean.jpg);
+    background-size: 100%;
+}
+
+.main-header {
+    background-color: rgb(255, 255, 255, 0.8);
+    width: 700px;
+    margin: 2em auto 0 auto;
+    min-height: 100px;
+    height: 100px;
+}
+
+.main-header .logo img {
+    width: 100px;
+    height: 100px;
+    margin: 0 2em 0 0;
+    float: left;
+}
+
+.main-menu {
+    margin-left: 227px;
+    font-weight: 400;
+}
+
+.main-menu ul li {
+    list-style-type: none;
+    /* display: inline-block; */
+    float: left;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-left: 1px solid rgb(202, 204, 202, 0.6);
+    line-height: 100px;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.main-menu ul li a {
+    text-decoration: none;
+    color: #888;
+}
+
+.main-menu ul li a:hover {
+    color: #9ed034;
+}
+
+.main-menu ul li.active {
+    background: #9ed034;
+    border: none;
+}
+
+.main-menu ul li.active a {
+    color: #fff;
+}
+
+/* Main Styling */
+
+.text {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#intro {
+    color: #9ed034;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.subT {
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Partners */
+section {
+    width: 100%;
+    background-color: #4288C3;
+}
+
+section #partners {
+    width: 1200px;
+    padding: 2em 0 2em 0;
+    margin: 0 auto;
+    text-align: center;
+}
+
+section #partners .partner {
+    display: inline-block;
+    margin: 0 0.75em;
+    padding: 1.3em 1.5em;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+section #partners .partner img {
+    width: 90px;
+    height: 90px;
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    height: 155px;
+    padding-bottom: 1em;
+    background-color: #ecfab8;
+}
+
+footer #nondisclaimer .copy {
+    padding: 3.5em 3.5em 3.5em 13em;
+    float: left;
+    font-size: 0.9em;
+}
+
+footer #nondisclaimer .social {
+    padding: 2.5em;
+    margin-right: 9.25em;
+    float: right;
+}
+
+footer #disclaimer {
+    clear: both;
+    text-align: center;
+}
+
+footer #disclaimer p {
+    font-size: 0.85em;
+}
+
+/* Font Awesome */
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    margin: 0 4px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+/* Sets a specific color for each brand */
+
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-instagram {
+    background: #125688;
+    color: white;
+}
