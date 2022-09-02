@@ -36,11 +36,8 @@
     </header>
 
     <section id="timeofday">
-        <span>Your Current Local Time: </span>
-        <span id="clock"></span>
+        <span id="timeT">Your Current Local Time: <span id="clock"> </span> </span>
     </section>
-
-
 
     <main>
         <div class="text">
@@ -109,6 +106,10 @@
             var min = d.getMinutes(); 
             var sec = d.getSeconds(); 
             var ampm; // This declares an empty variable to store AM or PM 
+            var utchr = d.getUTCHours(); 
+            var timeDiff; 
+            var adjTimeDiff; 
+            var timeZone; 
 
             //Adds a 0 to single digit numbers for seconds 
             if (sec < 10) { 
@@ -133,6 +134,9 @@
 
             //Display current local time and time zone within the set HTML Elements; This is calling the id 'clock' i've set within the section between the header and main
             document.getElementById("clock").innerText = time; // this will now add the time 
+
+            //Set the function to refresh every 1 second 
+            setInterval(currentTime, 1000); 
         }
 
         //This will call the function and run the script adding time into the set HTML element. 

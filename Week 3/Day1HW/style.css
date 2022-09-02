@@ -79,6 +79,30 @@ header {
   color: #fff;
 }
 
+/*  Clock Styling */ 
+
+#timeofday { 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background: rgb(34,193,195);
+  background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#timeT { 
+  color: #3a3a3a;
+}
+
+#clock { 
+  color:  #125688;
+}
+
+
+
 /* Main Styling */
 
 .text {
