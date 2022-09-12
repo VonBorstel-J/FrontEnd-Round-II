@@ -4,11 +4,13 @@ body {
   margin: 0 auto;
   border: 5px solid black;
   font-family: "Ubuntu", Arial, sans-serif;
+  overflow-x: hidden;
 }
 
 footer {
-  margin-top: 100px;
+  margin-top: 5%;
   background-color: #fffffe;
+  font-family: 'Ubuntu';
 }
 
 .navbar {
@@ -206,13 +208,76 @@ h1 span:nth-child(14){ animation-delay:.65s; }
     transform: rotate(30deg);
 }
 
+#aboutBanner { 
+    grid-column: 1 / 6;
+    grid-row:  9 / 12;
+    position: relative;
+    left: 1%;
+    bottom: 80px;
+    width: 98%;
+    background-color: #b8c1ec;
+    border-radius: 10px;
+    opacity: 90%;
+}
+
+
 #about { 
-    grid-column: 2 / 5;
-    grid-row:  9;
-    justify-self: center;
+    position: relative; 
+    left: 45%;
     font-size: 100px;
     font-family: 'cookie';
     font-weight: 500;
-    position: relative;
-    bottom: 80px;
+}
+
+.pAbout { 
+    position: relative; 
+    width: 90%;
+    left: 5%;
+    font-family: 'Ubuntu';
+    font-size: 20px;
+}
+
+
+#adoptionT { 
+    position: relative; 
+    left: 40%;
+    font-size: 100px;
+    font-family: 'cookie';
+    font-weight: 500;
+}
+
+
+#adt {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    grid-column: 1 / 6;
+    grid-row: 12 / 13;
+    margin: 40px;
+    font-family: 'ubuntu';
+}
+
+#adt1 {
+    width: 400px;
+    height: auto;
+}
+
+#adt2 { 
+    width: 400px;
+    height: auto;
+}
+
+#adt3 { 
+    width: 400px;
+    height: auto;
+}
+
+#adt4 { 
+    width: 400px;
+    height: auto;
+}
+
+.card-title { 
+    font-size: 30px;
 }
