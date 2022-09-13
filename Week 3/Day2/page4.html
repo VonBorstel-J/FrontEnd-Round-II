@@ -68,11 +68,11 @@
             fileNames.push("winterland" + (i+1)); //This pulls the file name and adds the number to them in order
             photos.push("<img src='/images/"+fileNames[i]+".jpg'>"); //Assemble filename into image element and store in an array 
             image = openList + photos[i] + closeList; //Putting it all together 
-            imageList.push(image); //Storing the as
+            imageList.push(image); //Storing 
         }
 
         //Now to actually display the gallery from the stored array  
-        document.getElementById("album").innerHTML = imageList
+        document.getElementById("album").innerHTML = imageList;
 
     </script>
 

@@ -343,14 +343,14 @@ section {
   margin-top: 100px;
 }
 
-section #partners {
+section #partnersList {
   width: 1200px;
   padding: 2em 0 2em 0;
   margin: 0 auto;
   text-align: center;
 }
 
-section #partners .partner {
+section #partnersList .partner {
   display: inline-block;
   margin: 0 0.75em;
   padding: 1.3em 1.5em;
@@ -358,7 +358,7 @@ section #partners .partner {
   border-radius: 50%;
 }
 
-section #partners .partner img {
+section #partnersList .partner img {
   width: 90px;
   height: 90px;
 }

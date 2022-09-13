@@ -13,5 +13,5 @@ for (var i=0; i<6; i++) {
     imageList.push(image); 
 }
 
-document.getElementById("partners").innerHtml = imageList; 
+document.getElementById("partnersList").innerHtml = imageList;
 
