@@ -51,6 +51,10 @@ main h1 {
   color: rgb(129, 141, 179);
 }
 
+main #album #photo img { 
+  width: 400px;
+}
+
 table {
   margin-top: 35px;
 }

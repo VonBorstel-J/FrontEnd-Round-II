@@ -33,13 +33,13 @@
     <h1>My Fourth Heading</h1>
     <p>My Fourth paragraph</p>
 
-    <ul>
-        <li id="photo"><img src="/images/winterland1.jpg"></li>
+    <ul id="album">
+        <!-- <li id="photo"><img src="/images/winterland1.jpg"></li>
         <li id="photo"><img src="/images/winterland2.jpg"></li>
         <li id="photo"><img src="/images/winterland3.jpg"></li>
         <li id="photo"><img src="/images/winterland4.jpg"></li>
         <li id="photo"><img src="/images/winterland5.jpg"></li>
-        <li id="photo"><img src="/images/winterland6.jpg"></li>
+        <li id="photo"><img src="/images/winterland6.jpg"></li> -->
     </ul>
 
 
@@ -55,6 +55,29 @@
     </div>
     <!-- End of container  -->
     
+    <script>
+        var photos = []; //Declares an empty array for the images to be stored in 
+        var fileNames = []; //Declares an empty array to store image file names 
+        var imageList = []; //Declares an empty array to storethe html list that contains the images 
+        var image; //Declares an empty variable to store the assembled image list codes 
+        var openList = "<li id='photo'>"; //Declares a variable to contain the open list tag 
+        var closeList = "</li>"; //Declares a variable to contain the close list tag 
+
+        //This will create a loop that will render the 6 images**always start with an index of 0 
+        for (var i=0; i<6; i++) { 
+            fileNames.push("winterland" + (i+1)); //This pulls the file name and adds the number to them in order
+            photos.push("<img src='/images/"+fileNames[i]+".jpg'>"); //Assemble filename into image element and store in an array 
+            image = openList + photos[i] + closeList; //Putting it all together 
+            imageList.push(image); //Storing the as
+        }
+
+        //Now to actually display the gallery from the stored array  
+        document.getElementById("album").innerHTML = imageList
+
+    </script>
+
+
+
     </body>
     
 </html>
