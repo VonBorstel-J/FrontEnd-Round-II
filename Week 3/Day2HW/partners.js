@@ -1,3 +1,5 @@
+function partnersGallery () {
+
 var photos = []; 
 var fileNames = []; 
 var imageList = []; 
@@ -15,3 +17,6 @@ for (var i=0; i<6; i++) {
 
 document.getElementById("partnersList").innerHtml = imageList;
 
+}
+
+    partnersGallery();
