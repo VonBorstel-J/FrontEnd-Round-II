@@ -1,0 +1,109 @@
+header {
+  background: url(/images/central_park.jpg) 0 -200px no-repeat; /* places image as background */
+  height: 400px;
+  padding-top: 100px;
+  padding-left: 100px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+li {
+  list-style-type: none;
+  display: inline;
+}
+
+li a {
+  text-decoration: none; /* Removes Underline */
+}
+
+li a:link {
+  color: #000; /* Before Click */
+}
+
+li a:visited {
+  color: #818db3; /* After Click */
+}
+
+li a:hover {
+  color: #333; /* Mouse Over */
+}
+
+li a:active {
+  color: #753a30; /* Mouse Down */
+}
+
+nav {
+  background-color: rgb(255, 245, 238);
+  height: 50px;
+  text-align: center;
+  padding-top: 2px;
+}
+
+nav li {
+  margin: 0 1em;
+}
+
+main {
+  margin: 50px;
+}
+
+main h1 {
+  color: rgb(129, 141, 179);
+}
+
+table {
+  margin-top: 35px;
+}
+
+table,
+caption,
+th,
+td {
+  border: 1px solid #000;
+}
+
+th,
+td {
+  width: 150px;
+  height: 35px;
+  text-align: center;
+}
+
+caption {
+  text-transform: uppercase;
+  font-weight: 600;
+  height: 40px;
+  padding-top: 15px;
+  color: #753a30;
+}
+
+label {
+  display: block;
+  margin: 15px 0 0 0;
+}
+
+input {
+  width: 300px;
+}
+
+input[type="radio"] {
+  width: 25px;
+}
+
+textarea {
+  width: 300px;
+}
+
+input[type="submit"] {
+  display: block;
+  margin: 20px 0 10px 0;
+  width: 100px;
+}
+
+footer {
+  height: 40px;
+  background-color: rgb(129, 141, 179);
+  text-align: center;
+  padding-top: 20px;
+  color: rgb(211, 218, 240);
+}

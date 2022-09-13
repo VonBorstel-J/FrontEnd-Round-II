@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Day2/style.css">
     <title>My Third Web Page</title>
 </head>
 <body> 
@@ -31,29 +32,29 @@
     <main>    
     <h1>My Third Heading</h1>
     <p>My Third paragraph</p>
-    <img src="/images/central_park.jpg" alt="Central Park" width="500">
+    <!-- <img src="/images/central_park.jpg" alt="Central Park" width="500"> -->
     
     <form action="/signup" method="post">
     <fieldset> 
             <legend>User Personal Information</legend>
-            <label> Enter your full Name</label><br>
-            <input type="text" name="name"><br>
-            <label>Enter your Email</label><br>
-            <input type="text" name="email"><br>
-            <label>Enter your Phone</label><br>
-            <input type="text" name="phone"><br>
-            <br>
-            <label>Select your gender</label><br>
+            <label> Enter your full Name</label>
+            <input type="text" name="name">
+            <label>Enter your Email</label>
+            <input type="text" name="email">
+            <label>Enter your Phone</label>
+            <input type="text" name="phone">
+            
+            <label>Select your gender</label>
             <input type="radio" name="gender" value="male"/>Male 
-            <input type="radio" name="gender" value="female"/>Female <br/>
-            <br>
-            <label>How should we contact you</label><br>
+            <input type="radio" name="gender" value="female"/>Female 
+            
+            <label>How should we contact you</label>
             <select>
                 <option>Email</option>
                 <option>Phone</option>
-            </select><br>
+            </select>
 
-            <br> Tell us the reason ofyour visit today: <br>
+            <label> Tell us the reason ofyour visit today: </label>
             <textarea cols="30" rows="5"></textarea><br>
             <input type="submit" value="sign-up">
     </fieldset>
