@@ -370,17 +370,18 @@ h1 span:nth-child(14) {
   margin: 0 auto;
   margin-top: 150px;
 }
-.border {
+.border1 {
   height: 369px;
   width: 290px;
   background: transparent;
   border-radius: 10px;
   transition: border 1s;
   position: relative;
+  border: none!important;
 }
-.border:hover {
+/* .border:hover {
   border: 1px solid #fff;
-}
+} */
 .card {
   height: 379px;
   width: 300px;
@@ -562,14 +563,13 @@ h2 {
   display: none;
   top:50%;
   left:50%;
-  height: 60%;
-  width: 80%;
+  height: 40%;
+  width: 25%;
   transform:translate(-50%, -50%);
   color: white; background: #666666; opacity: .8;
   border-radius: 9px;
   z-index: 1000;
   background-color: rgba(0,0,0,5.9); 
-  cursor: pointer; 
 }
 
 .closeBtn { 
@@ -581,6 +581,26 @@ h2 {
 
 .closeBtn:hover { 
   color:red; 
+}
+
+#overlayContainer { 
+  margin: 4%
+}
+
+
+#infoBoxH1 { 
+  font-family: "Yellowtail", Arial, sans-serif;
+  font-size: 50px;
+}
+
+#textInfo { 
+  font-family: "Ubuntu";
+
+}
+
+#overlayForm { 
+  font-family: "Ubuntu";
+  font-size: 15px;
 }
 
 /* Contact form Styling Start */
