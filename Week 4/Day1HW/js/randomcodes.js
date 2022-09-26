@@ -18,7 +18,7 @@ document.getElementById("codes").innerHTML = generateCode();
 
 //This will disable button 
 function disableButton () { 
-    document.getElementById("submit").disable = true;
+    document.getElementsByClassName("button").disable = true;
 }
 
 //Activate function 

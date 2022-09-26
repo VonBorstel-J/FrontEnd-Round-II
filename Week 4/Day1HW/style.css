@@ -191,7 +191,7 @@ tr {
 fieldset {
   border: 1px solid auto;
   border-color: #9ed034;
-  background-color: rgba(211, 211, 211, 0.288);
+  background-color: rgba(211, 211, 211, 0.151);
   border-radius: 10px;
 }
 
@@ -282,7 +282,7 @@ textarea {
   height: 299px;
   padding: 12px 20px;
   box-sizing: border-box;
-  border: 2px solid #ccc;
+  border: 2px solid rgb(204, 204, 204);
   border-radius: 4px;
   background-color: #ffffff;
   resize: none;
@@ -293,8 +293,16 @@ select {
   text-align: center;
 }
 
+.randomcode { 
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+  width: 20%;
+  left: 32%;
+}
+
 .button {
-  background-color: #125688;
+  /* background-color: #125688; */
   border: none;
   color: #fff;
   padding: 10px 40px;
