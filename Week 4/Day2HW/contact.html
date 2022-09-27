@@ -64,18 +64,26 @@
                         <label>Name:</label>
                         <input type="text" name="name" placeholder="John Doe">
 
-                        <label>Email:</label>
-                        <input type="email" name="email" placeholder="johndoe@gmail.com">
+                        <div class="radios">
+                            <label>How should we contact you?</label>
+                            <select id="contactSelect" name="contact">
+                                <option id="emailC" value="Email">Email</option>
+                                <option id="phoneC" value="Phone">Phone</option>
+                            </select>
+                        </div>
 
-                        <label>Phone:</label>
-                        <input type="text" name="phone" placeholder="xxx-xxx-xxxx">
+                        <div id="email">
+                            <label>Email:</label>
+                            <input type="email" name="email" placeholder="johndoe@gmail.com">
+                        </div>
+
+                        <div id="phone">
+                            <label>Phone:</label>
+                            <input type="text" name="phone" placeholder="xxx-xxx-xxxx">
+                        </div>
 
                     </div>
-                    <div class="radios">
-                        <label>How should we contact you?</label>
-                        <input type="radio" name="contact" value="email" checked>Email <input type="radio"
-                            name="contact" value="phone">Phone
-                    </div>
+
                     <div class="selectmenu">
                         <label>Which Cliff are you inquiring?</label>
                         <select>
