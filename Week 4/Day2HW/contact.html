@@ -11,7 +11,7 @@
     <title>Great Cliffs of California</title>
 </head>
 
-<body id="contact">
+<body id="contact" onload="disableButton(true)">
     <header>
         <div class="main-header">
             <div class="logo">
@@ -92,12 +92,12 @@
 
                     <!-- Random Codes -->
                     <div class="randomcode">
-                        <input type="text" name="randomcode" placeholder="Enter Characters">
+                        <input type="text" name="randomcode" id="codeentered" placeholder="Enter Characters">
                         <p id="codes"></p>
                     </div>
 
                     <div class="buttonL">
-                        <button class="button"> <span> Inquire </span> </button>
+                        <button class="button" id="submit"> <span> Inquire </span> </button>
                     </div>
 
                 </div>
