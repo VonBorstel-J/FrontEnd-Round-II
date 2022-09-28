@@ -1,0 +1,40 @@
+<html>
+   <head>
+      <title>Westcliff Fullstack Bootcamp jQuery Ajax Example</title>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script>
+         $(document).ready(function() {
+            $("#btn").click(function(event){
+
+               //Add a div element within the body
+               $('body').append('<div id="showinfo"></div>');
+
+               //Add paragraph elements within the div
+               $('#showinfo').append('<p></p>');
+               $('#showinfo').append('<p></p>');
+               $('#showinfo').append('<p></p>');
+            
+               //Load data from json file to each paragraphs
+               $.getJSON('/Day1HW/result.json', function(jqdata) {
+                  $('#showinfo p:first-child').append('NAME: ' + jqdata.name);
+                  $('#showinfo p:nth-child(2)').append('AGE: ' + jqdata.age);
+                  $('#showinfo p:last-child').append('SEX: ' + jqdata.sex);
+               });
+					
+            });
+         });
+      </script>
+      <style>
+         #showinfo {
+            background-color:#eee;
+         }
+      </style>
+   </head>
+	
+   <body>
+      <!--<div id = "showinfo"></div>-->
+		<p>Click button to load result.json file</p>
+      <input type = "button" id = "btn" value = "Load Data" />
+   </body>
+</html>
+
