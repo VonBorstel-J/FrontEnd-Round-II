@@ -64,32 +64,27 @@
                         <label>Name:</label>
                         <input type="text" name="name" placeholder="John Doe">
 
-                        <div class="radios">
+                        <div>
+
                             <label>How should we contact you?</label>
 
-
-                            <select id="contactSelect" name="contact" onChange="grabInput()">
-
-
-                                <option id="emailC" value="Email">Email</option>
-
-
-                                <option id="phoneC" value="Phone">Phone</option>
-
-                                
+                            <select id="contactSelect" name="contact" >
+                                <option value="pickOne">Select</option>
+                                <option id="emailOption" value="Email">Email</option>
+                                <option id="phoneOption" value="Phone">Phone</option>
                             </select>
+
                         </div>
 
-                        <div id="email">
-                            <label>Email:</label>
+                        <div id="emailInput" style="display:none;">
+                            <label for="Email">Email:</label>
                             <input type="email" name="email" placeholder="johndoe@gmail.com">
                         </div>
 
-                        <div id="phone">
-                            <label>Phone:</label>
+                        <div id="phoneInput" style="display:none;">
+                            <label for="Phone">Phone:</label>
                             <input type="text" name="phone" placeholder="xxx-xxx-xxxx">
                         </div>
-
                     </div>
 
                     <div class="selectmenu">
@@ -158,7 +153,8 @@
     </footer>
 
     <script src="/Day1HW/js/randomcodes.js"></script>
-    <script src="/Day1HW/js/site_scripts.js"></script>
+    <script src="/Day2HW/js/site_scripts.js"></script>
+
 
 </body>
 

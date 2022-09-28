@@ -72,26 +72,26 @@ disableButton();
 
 //--------- Contact Form Script ----------------------------------------------------------------------------------------------------------------
 
-// var phone = document.createElement(`<label>Phone:</label>
-//                                     <input type="text" name="phone" placeholder="xxx-xxx-xxxx">`);
 
-// var email = document.createElement(`<label>Email:</label>
-//                                     <input type="email" name="email" placeholder="johndoe@gmail.com">`);
+var select = document.getElementById("contactSelect");
+select.addEventListener("change", grabInput);
+
+function grabInput() {
+  var email = document.getElementById("emailOption");
+  var phone = document.getElementById("phoneOption");
+  var inputE = document.getElementById("emailInput");
+  var inputP = document.getElementById("phoneInput");
+
+  if (select.value == "Email") {
+    inputE.style.display = "block";
+    inputP.style.display = "none";
+  } else if (select.value == "Phone") {
+    inputP.style.display = "block";
+    inputE.style.display = "none";
+  } else {
+    inputP.style.display = "none";
+    inputE.style.display = "none";
+  }
+};
 
 
-
-    function grabInput() { 
-      var select = document.getElementById('contactSelect');
-      var value = select.options[select.selectedIndex];
-      var email = document.getElementById('email');
-      var phone = document.getElementById('phone');
-        if(value === 'Email') {
-          email.style.display = 'block';
-          phone.style.display = 'none';
-        } else  (value === 'Phone') {
-          phone.style.display = 'block';
-          email.style.display = 'none'; 
-        } 
-    }
-
-  
