@@ -1,0 +1,23 @@
+{
+    "title": "Calories Comparison of Popular Burgers",
+    "heading": "Type",
+    "head1" : "BigMac",
+    "head2": "Whopper",
+    "head3": "Dave's Double",
+    "head4": "Whataburger",
+    "subheadcal": "Calories",
+    "cal1" : "563",
+    "cal2": "677",
+    "cal3": "870",
+    "cal4": "590",
+    "subheadfat": "Fat",
+    "fat1" : "30gm",
+    "fat2": "40gm",
+    "fat3": "51gm",
+    "fat4": "25gm",
+    "subheadven": "Vendor",
+    "ven1" : "MacD",
+    "ven2": "Burger King",
+    "ven3": "Wendys",
+    "ven4": "Whataburger"
+ }
