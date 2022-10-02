@@ -66,7 +66,7 @@ main {
   grid-row: 1 / 4;
   width: 100%;
   height: auto;
-  background-image: url(/Week\ 5/images/headerB.jpg);
+  background-image: url(/images/headerB.jpg);
   background-position: bottom;
   background-size: cover;
   opacity: 90%;
