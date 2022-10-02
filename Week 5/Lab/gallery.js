@@ -113,7 +113,7 @@ $(function ($) {
 
 
      // This will create a lightbox with form if it doesnt already exist in the html markup and if it does itll show or hide it depending on its current state
-    if ($("#lightbox").length > 0) {
+    if ($("#lightbox").length > 0 || $("#overlay").length > 0) {
       $("#content").html('<img src="' + image_href + '" />');
       $("#lightbox").show("fast");
       $("#overlay").show("fast");
@@ -121,7 +121,7 @@ $(function ($) {
       var lightbox =
         '<div id="lightbox">' +
         "<p>Click to close</p>" +
-        '<div id="content">' + //insert clicked link's href into img src
+        '<div id="content">' + //inserting clicked link's href into img src
         '<img src="' +
         image_href +
         '" />' +

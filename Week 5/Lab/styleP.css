@@ -19,6 +19,8 @@ footer {
   width: 100%;
   height: 100px;
   background-color: #c3f0ca;
+  font-family: Yellowtail;
+  font-size: 25px;
 }
 .navbar-collapse {
   justify-content: flex-end;
