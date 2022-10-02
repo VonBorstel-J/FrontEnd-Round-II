@@ -562,13 +562,13 @@ h2 {
   position:fixed;
   display: none;
   top:50%;
-  left:50%;
+  left:80%;
   height: 40%;
   width: 25%;
   transform:translate(-50%, -50%);
   color: white; background: #666666; opacity: .8;
   border-radius: 9px;
-  z-index: 1000;
+  z-index: 10000;
   background-color: rgba(0,0,0,5.9); 
 }
 
@@ -577,6 +577,7 @@ h2 {
   font-weight: bold;
   cursor: pointer;
   color: #000;
+  z-index: 1;
 }
 
 .closeBtn:hover { 
@@ -584,7 +585,8 @@ h2 {
 }
 
 #overlayContainer { 
-  margin: 4%
+  margin: 4%;
+  z-index: ;
 }
 
 
@@ -855,10 +857,26 @@ textarea {
   height:100%; 
   background:rgba(0,0,0,.7);
   text-align:center;
+  z-index: ;
 }
 
 #lightbox img {
   box-shadow:0 0 25px #111;
   width:auto;
-  max-height:800px ;
+  max-height:800px;
+  border-radius: 9px;
+}
+
+#lightbox p {
+  text-align:center; 
+  color:#fff; 
+  margin-top: 20px;
+  margin-right:20px; 
+  font-size:12px; 
+}
+
+a { 
+  text-decoration: none!important;
+  z-index: ;
+  overflow: hidden;
 }
