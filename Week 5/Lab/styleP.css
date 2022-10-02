@@ -586,7 +586,6 @@ h2 {
 
 #overlayContainer { 
   margin: 4%;
-  z-index: ;
 }
 
 
@@ -857,7 +856,6 @@ textarea {
   height:100%; 
   background:rgba(0,0,0,.7);
   text-align:center;
-  z-index: ;
 }
 
 #lightbox img {
@@ -877,6 +875,5 @@ textarea {
 
 a { 
   text-decoration: none!important;
-  z-index: ;
   overflow: hidden;
 }
