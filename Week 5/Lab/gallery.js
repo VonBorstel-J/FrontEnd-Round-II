@@ -3,17 +3,13 @@ let container = document.querySelector(".container");
 for (let i = 0; i <= 7; i++) {
   let myDiv = document.createElement("div");
   if (i === 0) {
-    myDiv.innerHTML =`<div class="card card0">
-    <a href="#/" class="lightbox-toggle"></a>
-    <div class="backdrop"></div>
-
-<div class="box">
-  <div class="close">x</div>
-</div>
+    myDiv.innerHTML =`<div class="card">
+    <a class="card card0" href="https://images.pexels.com/photos/8963721/pexels-photo-8963721.jpeg?auto=compress&cs=tinysrgb&w=1600" class="open-lightbox" data-lightbox="image-1">
     <div class="border1">
-    <div id="overlay">
     
-    <button class="closeBtn" onClick="off()">X</button>
+    <div id="overlay">
+   
+    <button class="closeBtn" onClick="off()" >X</button>
     <div id="overlayContainer"> 
     <h1 id="infoBoxH1">Adopt Me!</h1>
     <p id="textInfo">Lorem ipsum dolor sit amet consetetur adipiscing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit. 
@@ -39,6 +35,7 @@ for (let i = 0; i <= 7; i++) {
 
     </div>
     </div>
+    </a>
     </div>`;
   } else if (i === 1) {
     myDiv.innerHTML =`<div class="card card1">
