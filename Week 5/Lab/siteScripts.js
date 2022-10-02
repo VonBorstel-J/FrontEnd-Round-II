@@ -1,62 +1,32 @@
-// $(document).ready(function(){
+$(function ($) {
+  $(".lightbox_trigger").click(function (e) {
+    // this will prevent the hyperlink click
+    e.preventDefault();
 
-//     /* Open lightbox on button click */
-//     $('.lightbox-toggle card').click(function(){
-//         $('.backdrop').animate({'opacity':'.50'}, 300, 'linear').css('display', 'block');
-//         $('.box').fadeIn();
+    var image_href = $(this).attr("href"); // Grabs the data from the href link
 
-//         //Check if lightbox has an image
-//         if ($('.box').contents('img')) {
-//             $('.box').contents().remove('img'); //If true, clear image
-//         }
+    if ($("#lightbox").length > 0) {
+      // This will create a lightbox if it doesnt already exist in the html markup
 
-//         //Get text content in attribute
-//         var $altvalue = $(this).attr('alt'); //or var altvalue = $(this).attr('alt');
+      $("#content").html('<img src="' + image_href + '" />');
 
-//         if ($altvalue=="Angkor Wat") {
-//             var img = $('#photo:nth-child(1) img').clone(); //Duplicate DOM element
-//             $('.box').append(img); //Insert duplicated element in another element
-//         }
-//     });
-
-//     /* Click to close lightbox */
-//     $('.close, .backdrop').click(function(){
-//         $('.backdrop').animate({'opacity':'0'}, 300, 'linear', function(){
-//             $('.backdrop').css('display', 'none');
-//         });
-//         $('.box').fadeOut();
-//     });
-
-// });
-
-// $('.card').slick({
-//   slidesToShow: 3,
-//   slidesToScroll: 1,
-//   autoplay: true,
-//   autoplaySpeed: 2000,
-//   arrows: true,
-//   dots: true
-  
-// });
-
-
-// $('.card').slickLightbox({
-//   itemSelector        : 'a.open-lightbox',
-//   navigateByKeyboard  : true
-// });
-
-
-$(document).ready(function(){
-  $('.card').slick({
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    prevArrow: '<span class="gallery-arrow mod-prev">Prev</span>',
-    nextArrow: '<span class="gallery-arrow mod-next">Next</span>'
+      $("#lightbox").show('fast');
+    } else {
+      var lightbox =
+        '<div id="lightbox">' +
+        "<p>Click to close</p>" +
+        '<div id="content">' + //insert clicked link's href into img src
+        '<img src="' +
+        image_href +
+        '" />' +
+        "</div>" +
+        "</div>";
+      $("body").append(lightbox);
+    }
   });
-  
-  $('.card0').slickLightbox({
-    src: 'a href',
-    itemSelector: '.card0 a',
-    background: 'rgba(0, 0, 0, .7)'
+
+  //This will allow you to click anywehre on the page to hide the lightbox 
+  $("body").on("click", "#lightbox", function () {
+    $("#lightbox").hide();
   });
 });

@@ -4,11 +4,9 @@ for (let i = 0; i <= 7; i++) {
   let myDiv = document.createElement("div");
   if (i === 0) {
     myDiv.innerHTML =`<div class="card">
-    <a class="card card0" href="https://images.pexels.com/photos/8963721/pexels-photo-8963721.jpeg?auto=compress&cs=tinysrgb&w=1600" class="open-lightbox" data-lightbox="image-1">
+    <a class="card card0 lightbox_trigger" href="https://images.pexels.com/photos/8963721/pexels-photo-8963721.jpeg?auto=compress&cs=tinysrgb&w=1600">
     <div class="border1">
-    
     <div id="overlay">
-   
     <button class="closeBtn" onClick="off()" >X</button>
     <div id="overlayContainer"> 
     <h1 id="infoBoxH1">Adopt Me!</h1>
