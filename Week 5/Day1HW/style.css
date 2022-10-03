@@ -170,6 +170,11 @@ tr {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.clicked { 
+  background-color: #9ed034!important;
+}
+
+
 /* Contact Page Styling */
 
 #contactT {
@@ -500,3 +505,4 @@ footer #disclaimer p {
   grid-column: 2;
   grid-row: 6;
 }
+

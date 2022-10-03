@@ -6,9 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.js"
+        integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/Day1HW/style.css">
     <title>Great Cliffs of California</title>
 </head>
+
 <body id="activities">
     <div id="container">
         <header>
@@ -57,39 +60,39 @@
                         <th>South Cliff</th>
                     </thead>
                     <tr>
-                        <td>Hiking</td>
-                        <td>College Hikes</td>
-                        <td>Family Fun</td>
-                        <td>Treasure Trails</td>
-                        <td>Canyon Explorer</td>
+                        <td id="activity">Hiking</td>
+                        <td id="activity">College Hikes</td>
+                        <td id="activity">Family Fun</td>
+                        <td id="activity">Treasure Trails</td>
+                        <td id="activity">Canyon Explorer</td>
                     </tr>
                     <tr>
-                        <td>Kayak</td>
-                        <td>Western Kayak Meetup</td>
+                        <td id="activity">Kayak</td>
+                        <td id="activity">Western Kayak Meetup</td>
                         <td>Not Available</td>
-                        <td>Youth Kayaking</td>
-                        <td>Kayak Down</td>
+                        <td id="activity">Youth Kayaking</td>
+                        <td id="activity">Kayak Down</td>
                     </tr>
                     <tr>
-                        <td>Skydiving</td>
-                        <td>Seacliff Diving</td>
-                        <td>Sky is the limit</td>
+                        <td id="activity">Skydiving</td>
+                        <td id="activity">Seacliff Diving</td>
+                        <td id="activity">Sky is the limit</td>
                         <td>Not Available</td>
-                        <td>Sky Diving for Beginners</td>
+                        <td id="activity">Sky Diving for Beginners</td>
                     </tr>
                     <tr>
-                        <td>Biking</td>
-                        <td>Bicycle for One</td>
+                        <td id="activity">Biking</td>
+                        <td id="activity">Bicycle for One</td>
                         <td>Not Available</td>
-                        <td>Bike Meetup Group</td>
+                        <td id="activity">Bike Meetup Group</td>
                         <td>Not Available</td>
                     </tr>
                     <tr>
-                        <td>Camping</td>
-                        <td>Youth Camp</td>
-                        <td>Rent a Tent</td>
-                        <td>Campground Adventure</td>
-                        <td>Sunset Camping</td>
+                        <td id="activity">Camping</td>
+                        <td id="activity">Youth Camp</td>
+                        <td id="activity">Rent a Tent</td>
+                        <td id="activity">Campground Adventure</td>
+                        <td id="activity">Sunset Camping</td>
                     </tr>
                 </table>
             </div>
@@ -128,15 +131,25 @@
                         <a href="#" class="fa fa-twitter"></a>
                     </div>
                 </div>
-                <div id="disclaimer">This website is designed and created solely for educational purposes only at Westcliff
+                <div id="disclaimer">This website is designed and created solely for educational purposes only at
+                    Westcliff
                     University. All contents are not intended for any commercial gain or use.</div>
             </footer>
     </div>
 
 
     <script src="/Day1HW/js/site_scripts.js"></script>
-
-
+    
+<script>$(document).ready(function() {
+    $('td').css('cursor', 'pointer');
+    $("td").click(function() {
+        var content = $(this).text(); 
+        if (content != "Not Available"){ 
+            $(this).toggleClass("clicked");
+            }
+        });
+    });
+    </script>
 
 </body>
 

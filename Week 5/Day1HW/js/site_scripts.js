@@ -36,7 +36,7 @@ function generateCode() {
   return code;
 }
 
-document.getElementById("codes").innerHTML = generateCode();
+document.getElementById("codes").innerHTML = code;
 
 //This will disable button
 function disableButton(btnvalue) {
@@ -93,5 +93,6 @@ function grabInput() {
     inputE.style.display = "none";
   }
 };
+
 
 
