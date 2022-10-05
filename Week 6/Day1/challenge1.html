@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RWD Group Challenge 1</title>
+    <style>
+        /* You are not require to add any new styles other than within media queries */
+        .largeMessage {
+            text-align: center;
+            padding: 200px 20px;
+            font-family:Arial, Helvetica, sans-serif;
+            color: #666;
+            font-size:2.5em;
+            width: 90%;
+            height: 3em;
+            background-color:blanchedalmond;
+        }
+        .mediumMessage {
+            text-align: center;
+            padding: 200px 20px;
+            font-family:Arial, Helvetica, sans-serif;
+            color: #666;
+            font-size:2.5em;
+            width: 90%;
+            height: 3em;
+            background-color:blanchedalmond;
+        }
+        .smallMessage {
+            text-align: center;
+            padding: 200px 20px;
+            font-family:Arial, Helvetica, sans-serif;
+            color: #666;
+            font-size:2.5em;
+            width: 90%;
+            height: 3em;
+            background-color:blanchedalmond;
+        }
+        .smolMessage {
+            text-align: center;
+            padding: 200px 20px;
+            font-family:Arial, Helvetica, sans-serif;
+            color: #666;
+            font-size:2.5em;
+            width: 90%;
+            height: 3em;
+            background-color:blanchedalmond;
+        }
+
+        .red{ 
+            color: red;
+        }
+        .blue{ 
+            color: rgb(0, 204, 255);
+        }
+        
+        /* Extra small devices (phones, 600px and down) */
+        @media only screen and (max-width: 600px) {
+            .smallMessage { display:none;}
+            span { 
+                text-transform: uppercase;
+            }
+            .mediumMessage{display:none; }
+            .largeMessage { display:none;}
+
+
+        }
+        
+        /* Small devices (portrait tablets and large phones, 600px and up) */
+        @media only screen and (min-width: 600px) {
+            .smolMessage{display: none; }
+            .mediumMessage{display:none; }
+            .largeMessage { display:none;}
+
+        }
+        
+        /* Medium devices (landscape tablets, 768px and up) */
+        @media only screen and (min-width: 768px) {
+            .smolMessage{display: none; }
+
+        } 
+        
+        /* Large devices (laptops/desktops, 992px and up) */
+        @media only screen and (min-width: 992px) {
+            .smolMessage{display: none; }
+            .smallMessage { display:none;}
+            .mediumMessage {display:inline-block}
+            .largeMessage { display:none;}
+        } 
+        
+        /* Extra large devices (large laptops and desktops, 1200px and up) */
+        @media only screen and (min-width: 1200px) {
+            .smolMessage{display: none; }
+            .mediumMessage{display:none;}
+            .largeMessage{display:inline-block}
+        }  
+    </style>
+</head>
+<body>
+
+    <h2>Change in Message When Viewport is Resize</h2>
+    <p class="largeMessage"><span class="blue">You Are Learning</span> Responsive <span class="red">Web Design</span></p>  
+    <p class="mediumMessage"><strong>RWD:</strong>Responsive<span class="red">Web Design</span></p>  
+    <p class="smallMessage">Responsive <span class="red">Web Design</span></p>     
+    <p class="smolMessage"><span>Responsive</span> as in...</p>
+</body>
+</html>
