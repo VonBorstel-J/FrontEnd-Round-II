@@ -1,0 +1,22 @@
+Navbar Demo:
+
+<!-- Hamburger Menu -->
+<!-- Values for data-target and aria-controls must match id of div with the collapse class -->
+<button class = "navbar-toggler" type = "button" data-toggle = "collapse" 
+     data-target = "#navbarContent" 
+     aria-controls = "navbarContent" aria-expanded = "false" 
+     aria-label = "Toggle navigation">
+               
+     <span class = "navbar-toggler-icon"></span>
+</button>
+
+
+Navbar Dropdown Demo:
+
+<div class = "dropdown-menu" aria-labelledby = "navbarDropdownMenuLink">
+     <a class = "dropdown-item" href = "#">HTML-5</a>
+     <a class = "dropdown-item" href = "#">CSS-3</a>
+     <a class = "dropdown-item" href = "#">Bootstrap-4</a>
+</div>
+
+
