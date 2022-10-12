@@ -1,0 +1,538 @@
+
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  width: 100%;
+  min-height: 400px;
+  padding-top: 3em;
+}
+
+#home header {
+  background: no-repeat lightgrey url(/images/cliff_ocean.jpg);
+  background-size: 100%;
+}
+
+#contact header {
+  background: no-repeat lightgrey url(/images/runfly.jpg);
+  background-size: 100%;
+}
+
+#activities header {
+  background: no-repeat lightgrey url(/images/cliff_rock.jpg);
+  background-size: 100%;
+}
+
+.main-header {
+  background-color: rgb(255, 255, 255, 0.8);
+  width: 700px;
+  margin: 2em auto 0 auto;
+  min-height: 100px;
+  height: 100px;
+}
+
+.main-header .logo img {
+  width: 100px;
+  height: 100px;
+  margin: 0 2em 0 0;
+  float: left;
+}
+
+.main-menu {
+  margin-left: 227px;
+  font-weight: 400;
+}
+
+.main-menu ul li {
+  list-style-type: none;
+  /* display: inline-block; */
+  float: left;
+  padding-left: 25px;
+  padding-right: 25px;
+  border-left: 1px solid rgb(202, 204, 202, 0.6);
+  line-height: 100px;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.main-menu ul li a {
+  text-decoration: none;
+  color: #888;
+}
+
+.main-menu ul li a:hover {
+  color: #9ed034;
+}
+
+.main-menu ul li.active {
+  background: #9ed034;
+  border: none;
+}
+
+.main-menu ul li.active a {
+  color: #fff;
+}
+
+/*  Clock Styling */ 
+
+#timeofday { 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background: rgb(34,193,195);
+  background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#timeT { 
+  color: #3a3a3a;
+}
+
+#clock { 
+  color:  #125688;
+}
+
+
+
+/* Main Styling */
+
+.text {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#intro {
+  color: #9ed034;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.subT {
+  font-weight: bolder;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Activites Styling */
+
+table {
+  width: 1000px;
+  margin: 4em auto 0 auto;
+}
+
+caption {
+  background: #852b1b;
+  height: 40px;
+  color: #fff;
+  font-size: 1.3em;
+  font-weight: bold;
+  padding-top: 1em;
+}
+
+thead {
+  background: #bde1ff;
+}
+
+tbody {
+  background: #eeffe6;
+  text-align: center;
+}
+
+th,
+td {
+  width: 225px;
+  height: 75px;
+  vertical-align: middle;
+  border: solid 1px #852b1b;
+}
+
+th:first-child {
+  width: 125px;
+  height: 50px;
+  background: #4977d1;
+  color: #fff;
+}
+
+td:first-child {
+  font-weight: bold;
+  background: #bde1ff;
+}
+
+tr {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.clicked { 
+  background-color: #9ed034!important;
+}
+
+
+/* Contact Page Styling */
+
+#contactT {
+  color: #9ed034;
+}
+
+#cPhone {
+  color: grey;
+  font-size: small;
+  display: inline-block;
+}
+
+#cEmail {
+  color: grey;
+  font-size: small;
+  display: inline-block;
+}
+
+fieldset {
+  border: 1px solid auto;
+  border-color: #9ed034;
+  background-color: rgba(211, 211, 211, 0.151);
+  border-radius: 10px;
+}
+
+legend {
+  color: #4977d1;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+
+.formContent {
+  margin: 10px;
+}
+
+label {
+  display: block;
+}
+
+input[type="text"],
+name {
+  width: 50%;
+  padding: 12px 20px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+label:first-child {
+  font-weight: bolder;
+}
+
+input[type="email"],
+email {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type="text"],
+phone {
+  width: 50%;
+  padding: 14px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type="submit"] {
+  width: 10%;
+  /*background-color: #4CAF50;*/
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  align-content: center;
+}
+form,
+fieldset {
+  padding: 10px;
+  border-color: #9ed034;
+}
+
+input[type="radio"],
+contact {
+  display: inline-block;
+}
+label:nth-child(3) {
+  font-weight: bolder;
+}
+label:nth-child(5) {
+  font-weight: bolder;
+}
+
+.selectmenu {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+textarea {
+  width: 50%;
+  height: 299px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid rgb(204, 204, 204);
+  border-radius: 4px;
+  background-color: #ffffff;
+  resize: none;
+}
+
+select {
+  width: 13%;
+  text-align: center;
+}
+
+.randomcode { 
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+  width: 20%;
+  left: 32%;
+}
+
+.button {
+  /* background-color: #125688; */
+  border: none;
+  color: #fff;
+  padding: 10px 40px;
+  text-align: center;
+  font-size: large;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  display: inline-block;
+  margin: 10px 4px;
+  cursor: pointer;
+  border-radius: 9px;
+  transition: all 0.5s;
+}
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+.buttonL {
+  margin-left: 41%;
+}
+
+/* Partners */
+section {
+  width: 100%;
+  background-color: #4288c3;
+  margin-top: 100px;
+}
+
+section #partnersList {
+  width: 1200px;
+  padding: 2em 0 2em 0;
+  margin: 0 auto;
+  text-align: center;
+}
+
+section #partnersList .partner {
+  display: inline-block;
+  margin: 0 0.75em;
+  padding: 1.3em 1.5em;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+section #partnersList .partner img {
+  width: 90px;
+  height: 90px;
+}
+
+/* Footer */
+footer {
+  width: 100%;
+  height: 155px;
+  padding-bottom: 1em;
+  background-color: #ecfab8;
+}
+
+footer #nondisclaimer .copy {
+  padding: 3.5em 3.5em 3.5em 13em;
+  float: left;
+  font-size: 0.9em;
+}
+
+footer #nondisclaimer .social {
+  padding: 2.5em;
+  margin-right: 9.25em;
+  float: right;
+}
+
+footer #disclaimer {
+  clear: both;
+  text-align: center;
+}
+
+footer #disclaimer p {
+  font-size: 0.85em;
+}
+
+/* Font Awesome */
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  margin: 0 4px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Sets a specific color for each brand */
+
+.fa-facebook {
+  background: #3b5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55acee;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+
+/* Cliffs Gallery Styling */ 
+
+.grid-container { 
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 10px;
+  justify-items: center;
+}
+
+.galleryBanner { 
+  height: 50px;
+  background-color: maroon;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.galleryBT { 
+  margin: 0;
+  font-size: 30px;
+  color: white;
+  padding-left: 40%;
+  padding-top: 10px;
+}
+
+.galleryImg { 
+  width: 800px;
+  height: auto;
+}
+
+#cliffsH { 
+  background-image: url(/images/forest_cliff.jpg)!important;
+}
+
+#galleryT { 
+  grid-column: 1;
+  grid-row: 1;
+  justify-self: left;
+  margin-left: 100px;
+  font-size: 25px;
+}
+
+#galleryP { 
+  grid-column: 1 / 3;
+  grid-row: 2;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 90%;
+  font-size: 18px;
+}
+
+#g1{
+  grid-column: 1;
+  grid-row: 4;
+}
+
+#g2{
+  grid-column: 2;
+  grid-row: 4;
+}
+
+#g3{
+  grid-column: 1;
+  grid-row: 6;
+}
+
+#g4{
+  grid-column: 2;
+  grid-row: 6;
+}
+
+/* Activities display box codes */ 
+
+#activities main #displaySelected { 
+  visibility: hidden;
+  margin: 0 auto;
+  width: 600px;
+  border: 2px solid #9ed034;
+  padding:  0.75em;
+}
+
+#activities main #displaySelected #result, #activities main #displaySelected #sendinfo { 
+  display: inline-block;
+  margin: 0;
+}
+
+#activities main #result { 
+  min-height: 50px;
+  width: 300px;
+  padding: 0;
+}
+
+#activities main #result h4 { 
+  margin-bottom: 1em;
+  font-size: 1.15em;
+
+}
+
+#activities main #displaySelected #sendinfo input[type="email"] {
+  width: 200px;
+}
