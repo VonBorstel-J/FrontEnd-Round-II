@@ -2,163 +2,185 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://code.jquery.com/jquery-3.6.1.js"
-        integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="/LabHW/style.css">
-    <title>Great Cliffs of California</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Great Cliffs of California</title>
+  <!-- Meta Tags -->
+  <meta charset="UTF-8" />
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style2.css" />
+
 </head>
 
 <body id="activities">
-    <div id="container">
-        <header>
-            <div class="main-header">
-                <div class="logo">
-                    <img src="/images/logo.png" alt="Great Cliffs Logo" width="125">
-                </div>
-                <div class="logo"></div>
-                <nav class="main-menu">
-                    <ul>
-                        <li>
-                            <a href="index.html">Home</a>
-                        </li>
-                        <li>
-                            <a href="cliffs.html">Cliffs</a>
-                        </li>
-                        <li class="active">
-                            <a href="activities.html">Activities</a>
-                        </li>
-                        <li>
-                            <a href="contact.html">Contact</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
-        <main>
-            <div>
-                <h1>Activities</h1>
-            </div>
-            <div>
-                <p>There are many planned activities at all the cliff sites. Some are scheduled daily, weekly, monthly
-                    and yearly. These activities are not however run by the state park and recreational department. They
-                    are operated and manage by private vendors but are partners with the state department. Therefore,
-                    for schedule inquiries or information, please contact them directly. For a list of activities,
-                    please refer to the table below: </p>
-            </div>
-                <table>
-                    <caption class="text"> Activities at the Cliffs </caption>
-                    <thead class="text">
-                        <th>Activity</th>
-                        <th>West Cliff</th>
-                        <th>North Cliff</th>
-                        <th>East Cliff</th>
-                        <th>South Cliff</th>
-                    </thead>
-                    <tr>
-                        <td id="activity">Hiking</td>
-                        <td id="activity">College Hikes</td>
-                        <td id="activity">Family Fun</td>
-                        <td id="activity">Treasure Trails</td>
-                        <td id="activity">Canyon Explorer</td>
-                    </tr>
-                    <tr>
-                        <td id="activity">Kayak</td>
-                        <td id="activity">Western Kayak Meetup</td>
-                        <td>Not Available</td>
-                        <td id="activity">Youth Kayaking</td>
-                        <td id="activity">Kayak Down</td>
-                    </tr>
-                    <tr>
-                        <td id="activity">Skydiving</td>
-                        <td id="activity">Seacliff Diving</td>
-                        <td id="activity">Sky is the limit</td>
-                        <td>Not Available</td>
-                        <td id="activity">Sky Diving for Beginners</td>
-                    </tr>
-                    <tr>
-                        <td id="activity">Biking</td>
-                        <td id="activity">Bicycle for One</td>
-                        <td>Not Available</td>
-                        <td id="activity">Bike Meetup Group</td>
-                        <td>Not Available</td>
-                    </tr>
-                    <tr>
-                        <td id="activity">Camping</td>
-                        <td id="activity">Youth Camp</td>
-                        <td id="activity">Rent a Tent</td>
-                        <td id="activity">Campground Adventure</td>
-                        <td id="activity">Sunset Camping</td>
-                    </tr>
-                </table>
-            
-                <div id="displaySelected">
-                    <div id="result">
-                        <h4>My selected activities to enquire:</h4>
-                    </div>
-                    <div id="sendinfo">
-                        <input type="email" placeholder="johndoe@gmail.com">
-                        <button>Get Info</button>
-                    </div>
-                </div>
 
 
-        </main>
-        <section>
-            <ul id="partnersList">
-                <!-- <li class="partner">
-                    <img src="/partners/partner1.png" alt="Partner Bus Tours">
-                </li>
-                <li class="partner">
-                    <img src="/partners/partner2.png" alt="Partner Cabin Rental">
-                </li>
-                <li class="partner">
-                    <img src="/partners/partner3.png" alt="Partner Camping Adventure">
-                </li>
-                <li class="partner">
-                    <img src="/partners/partner4.png" alt="Partner College Tours">
-                </li>
-                <li class="partner">
-                    <img src="/partners/partner5.png" alt="Partner Bike Rentals">
-                </li>
-                <li class="partner">
-                    <img src="/partners/partner6.png" alt="Partner Tour Group">
-                </li> -->
-            </ul>
-        </section>
-        <footer>
-            <footer>
-                <div id="nondisclaimer">
-                    <div class="copy">&copy Copyright 2020 :: GreatCliffs.com</div>
-                    <div class="social">
-                        <a href="#" class="fa fa-facebook"></a>
-                        <a href="#" class="fa fa-instagram"></a>
-                        <a href="#" class="fa fa-twitter"></a>
-                    </div>
-                </div>
-                <div id="disclaimer">This website is designed and created solely for educational purposes only at
-                    Westcliff
-                    University. All contents are not intended for any commercial gain or use.</div>
-            </footer>
+  <div class="main-header sticky-top">
+    <div class="logo">
+      <img src="images/logo.png" alt="Great Cliffs Logo" width="125">
     </div>
 
 
-    <script src="/LabHW/js/site_scripts.js"></script>
-    <script src="/LabHW/js/activities.js"></script>
-    
-<!-- <script>$(document).ready(function() {
-    $('td').css('cursor', 'pointer');
-    $("td").click(function() {
-        var content = $(this).text(); 
-        if (content != "Not Available"){ 
-            $(this).toggleClass("clicked");
-            }
-        });
-    });
-    </script> -->
+
+    <nav class="main-menu navbar-expand-lg navbar-dark">
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent"
+        aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="cliffs.html">Cliffs</a>
+          </li>
+          <li class=" active nav-item">
+            <a href="activities.html">Activities</a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <header id="pg3">
+  </header>
+
+  <main>
+
+    <h1>Activities</h1>
+    <p>There are many planned activities at all the cliff sites. Some are scheduled daily, weekly, monthly and yearly.
+      These activities are not however run by the state park and recreational department.
+      They are operated and manage by private vendors but are partners with the state department. Therefore, for
+      schedule inquiries or information, please contact them directly. For a list of activities, please refer to the
+      table below:
+    </p>
+
+
+    <div class="table-responsive">
+      <table style="padding-bottom: 100px;">
+        <caption style="font-family: Arial, Helvetica, sans-serif;" class="text"> Activities at the Cliffs </caption>
+        <thead class="text">
+          <th>Activity</th>
+          <th>West Cliff</th>
+          <th>North Cliff</th>
+          <th>East Cliff</th>
+          <th>South Cliff</th>
+        </thead>
+        <tr>
+          <td id="activity">Hiking</td>
+          <td id="activity">College Hikes</td>
+          <td id="activity">Family Fun</td>
+          <td id="activity">Treasure Trails</td>
+          <td id="activity">Canyon Explorer</td>
+      </tr>
+      <tr>
+          <td id="activity">Kayak</td>
+          <td id="activity">Western Kayak Meetup</td>
+          <td>Not Available</td>
+          <td id="activity">Youth Kayaking</td>
+          <td id="activity">Kayak Down</td>
+      </tr>
+      <tr>
+          <td id="activity">Skydiving</td>
+          <td id="activity">Seacliff Diving</td>
+          <td id="activity">Sky is the limit</td>
+          <td>Not Available</td>
+          <td id="activity">Sky Diving for Beginners</td>
+      </tr>
+      <tr>
+          <td id="activity">Biking</td>
+          <td id="activity">Bicycle for One</td>
+          <td>Not Available</td>
+          <td id="activity">Bike Meetup Group</td>
+          <td>Not Available</td>
+      </tr>
+      <tr>
+          <td id="activity">Camping</td>
+          <td id="activity">Youth Camp</td>
+          <td id="activity">Rent a Tent</td>
+          <td id="activity">Campground Adventure</td>
+          <td id="activity">Sunset Camping</td>
+      </tr>
+
+      </table>
+    </div>
+
+    <div id="displaySelected">
+      <div id="result">
+        <h4>My selected activities to enquire:</h4>
+      </div>
+      <div id="sendinfo">
+        <input type="email" placeholder="johndoe@gmail.com">
+        <button class="btn-primary">Get Info</button>
+      </div>
+    </div>
+
+  </main>
+
+
+
+
+  <section id="part" class="container-fluid">
+    <!--<ul id="partners">
+          <li class="partner">
+               <img src="images/partners/partner-bustour.png" alt="Partner Bus Tours">
+           </li>
+           <li class="partner">
+               <img src="images/partners/partner-cabinrental.png" alt="Partner Cabin Rental">
+           </li>
+           <li class="partner">
+               <img src="images/partners/partner-campingadv.png" alt="Partner Camping Adventure">
+           </li>
+           <li class="partner">
+               <img src="images/partners/partner-collegetours.png" alt="Partner College Tours">
+           </li>
+           <li class="partner">
+               <img src="images/partners/partner-rentalbike.png" alt="Partner Bike Rentals">
+           </li>
+           <li class="partner">
+               <img src="images/partners/partner-tourgroup.png" alt="Partner Tour Group">
+           </li>
+       </ul>-->
+  </section>
+
+
+
+
+  <footer>
+    <div id="nondisclaimer">
+      <div class="copy">&copy; Copyright 2020 :: GreatCliffs.com
+      </div>
+      <div class="social">
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-instagram"></a>
+        <a href="#" class="fa fa-twitter"></a>
+      </div>
+      <div id="disclaimer">
+        <p>This website is designed and created solely for educational purposes only at Westcliff University. All
+          contents are not intended for any commercial gain or use.</p>
+      </div>
+
+  </footer>
+
+
+  <!--Partners Gallery & Table Highlighter-->
+  <script src="js/site_scripts.js"></script>
 
 </body>
 
