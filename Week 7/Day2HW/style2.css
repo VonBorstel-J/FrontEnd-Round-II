@@ -1,0 +1,1247 @@
+/* Header */
+header {
+  width: 100%;
+  min-height: 275px;
+}
+#home {
+  background: no-repeat white url(images/cliff_ocean.jpg);
+  background-size: 100% 400px;
+}
+
+#contact1 {
+  background: no-repeat white url(images/cliff_rock.jpg);
+  background-size: 100% 400px;
+}
+
+#contact {
+  background: no-repeat white url(images/forest_cliff.jpg);
+  background-size: 100% 400px;
+}
+
+#activities {
+  background: no-repeat white url(images/runfly.jpg);
+  background-size: 100% 400px;
+}
+
+.main-header {
+  background-color: rgba(38, 41, 61, 0.7);
+  margin: 2em auto 0 auto;
+  min-height: 100px;
+}
+.main-header .logo img {
+  width: 100px;
+  height: 100px;
+  margin: 0 2em 0 0;
+  float: left;
+}
+
+li { 
+    list-style: none;
+}
+
+
+
+/* Navigation */
+.main-menu {
+  font-weight: 400;
+}
+.main-menu ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding-left: 25px;
+  padding-right: 25px;
+  border-left: 1px solid rgba(202, 204, 202, 0.6);
+  line-height: 100px;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+.main-menu ul li a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+.main-menu ul li a:hover {
+  color: #9ed034;
+}
+.main-menu ul li.active {
+  background: #9ed034;
+  border: none;
+}
+.main-menu ul li.active a {
+  color: #fff;
+}
+
+/* Main */
+
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #9ed034;
+  font-weight: 750;
+  padding-top: 30px;
+  padding-left: 45px;
+}
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgba(0, 0, 0, 0.963);
+  padding-top: 10px;
+  padding-left: 45px;
+}
+
+h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #9ed034;
+  padding-left: 2%;
+}
+
+h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  padding-left: 2.5%;
+}
+p {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgba(127, 132, 127, 0.963);
+}
+p {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.contactinfo {
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgba(127, 132, 127, 0.963);
+}
+span:first-child {
+  font-weight: bolder;
+  color: #4977d1;
+}
+.phone {
+  padding: 10px;
+}
+
+.email {
+  padding: 10px;
+}
+fieldset {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Formatting the Gallery */
+body {
+  margin: 0;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 500px 500px;
+  grid-template-rows: auto auto;
+  padding-left: 5%;
+  padding-bottom: 5%;
+  justify-content: center;
+  row-gap: 5%;
+  column-gap: 2%;
+}
+
+.grid-item {
+  font-size: 30px;
+  text-align: center;
+}
+
+.title {
+  background-color: rgb(160, 39, 17);
+  font-size: 26px;
+  color: #fff;
+  padding: 15px;
+  margin-bottom: -2px;
+}
+
+/*Form formatting */
+label {
+  display: block;
+}
+
+input[type="text"],
+name {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+label:first-child {
+  font-weight: bolder;
+}
+input[type="email"],
+email {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type="text"],
+phone {
+  width: 50%;
+  padding: 14px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+form,
+fieldset {
+  padding: 10px;
+  border-color: #9ed034;
+}
+
+input[type="radio"],
+contact {
+  display: inline-block;
+}
+label:nth-child(3) {
+  font-weight: bolder;
+}
+label:nth-child(5) {
+  font-weight: bolder;
+}
+
+.selectmenu {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+textarea {
+  width: 50%;
+  height: 299px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #ffffff;
+  resize: none;
+}
+select {
+  width: 13%;
+  text-align: center;
+}
+
+button {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5%;
+  font-size: x-large;
+  margin-left: 40%;
+}
+
+.randomcode {
+  padding-left: 30%;
+}
+
+input[type="text"] {
+  width: 200px;
+}
+.randomcode #codes {
+  display: inline;
+}
+
+/* Footer */
+
+footer {
+  width: 100%;
+  height: 155px;
+  padding-bottom: lem;
+  background-color: #ecfab8;
+}
+footer #nondisclaimer .copy {
+  padding: 3.5em 3.5em 3.5em 13em;
+  float: left;
+  font-size: 0.9em;
+}
+footer #nondisclaimer .social {
+  padding: 2.5em;
+  margin-right: 9.25em;
+  float: right;
+}
+footer #disclaimer {
+  clear: both;
+}
+footer #disclaimer p {
+  font-size: 0.85em;
+  text-align: center;
+}
+footer #nondisclaimer .social .fa {
+  padding: 15px;
+  font-size: 15px;
+  width: 15px;
+  text-align: center;
+  text-decoration: none;
+  margin: 0 4px;
+  border-radius: 50%;
+}
+footer #nondisclaimer .social .fa:hover {
+  opacity: 0.7;
+}
+footer #nondisclaimer .social .fa-facebook {
+  background: #3b5998;
+  color: white;
+}
+footer #nondisclaimer .social .fa-twitter {
+  background: #55acee;
+  color: white;
+}
+footer #nondisclaimer .social .fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+/* Activites */
+table {
+  width: 1000px;
+  margin: 4em auto 0 auto;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 40px;
+}
+
+caption {
+  background: #852b1b;
+  color: #fff;
+  font-size: 1.3em;
+  font-weight: bold;
+  padding-top: 1em;
+  caption-side: top;
+  text-align: center;
+}
+
+th {
+  background: #bdecff;
+  text-align: center;
+}
+
+tbody {
+  background: #eeffe6;
+  text-align: center;
+}
+
+th,
+td {
+  width: 255px;
+  height: 75px;
+  vertical-align: middle;
+  border: solid 1px #852b1b;
+}
+
+th:first-child {
+  width: 125px;
+  height: 50x;
+  background: #4977d1;
+  color: #fff;
+}
+
+td:first-child {
+  font-weight: bold;
+  background: #bde1ff;
+}
+
+/* Partners Code */
+section {
+  width: 100%;
+  background-color: #4288c3;
+  list-style-type: none;
+}
+section {
+  width: 1200px;
+  padding: 2em 0 2em 0;
+  margin: 0 auto;
+  text-align: center;
+  list-style-type: none;
+}
+.partner {
+  display: inline-block;
+  margin: 0 0.75em;
+  padding: 1.3em 1.5em;
+  background-color: #fff;
+  border-radius: 50%;
+}
+.partner img {
+  width: 90px;
+  height: 90px;
+}
+
+/* Javascript styling */
+
+#timeofday {
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(
+    0deg,
+    rgba(251, 215, 139, 1) 0%,
+    rgba(118, 213, 245, 1) 100%
+  );
+  width: auto;
+  padding: 1%;
+  padding-left: 43%;
+}
+
+#clock {
+  font-size: 15px;
+  font-weight: bold;
+  color: blue;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.tdhighlight {
+  background-color: green;
+}
+
+
+#activities main #displaySelected { 
+    visibility: hidden;
+    margin: 0 auto;
+    max-width: 500px;
+    width: auto;
+    border: 2px solid #9ed034;
+    padding:  0.75em;
+    margin-bottom: 40px;
+  }
+  
+  #activities main #displaySelected #result, #activities main #displaySelected #sendinfo { 
+    display: inline-block;
+    margin: 0;
+  }
+  
+  #activities main #result { 
+    min-height: 50px;
+    width: 300px;
+    padding: 0;
+  }
+  
+  #activities main #result h4 { 
+    margin-bottom: 1em;
+    font-size: 1.15em;
+  
+  }
+  
+  #activities main #displaySelected #sendinfo input[type="email"] {
+    width: 200px;
+  }
+
+
+/* @media Q's */
+
+@media (min-width: 1439px) {
+  /* Styling for main content at this resolution */
+
+  header {
+    width: 100%;
+    min-height: 490px;
+  }
+
+  /*Responsive Headers*/
+
+  #pg1 {
+    width: 100%;
+    min-height: 260px;
+  }
+
+  #pg2 {
+    min-height: 260px;
+  }
+
+  #pg3 {
+  }
+
+  #pg4 {
+    min-height: 260px;
+  }
+  /* <------------------------------------------------------------------------------------------------------------------------------->  */
+
+  #activities {
+    background: no-repeat white url(images/runfly.jpg);
+    background-size: 100% 600px;
+  }
+
+  .main-header {
+    width: 55%;
+  }
+
+  .container-fluid {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0%;
+    justify-content: center;
+  }
+  .logo img {
+    position: relative;
+    bottom: 8px;
+  }
+  .main-menu {
+    background-color: rgba(255, 255, 255, 0);
+  }
+
+  .main-menu ul li {
+    background-color: rgba(38, 41, 61, 0.597);
+    z-index: 10;
+  }
+  #navbarContent {
+    text-align: left;
+    float: right;
+  }
+
+  #title {
+    text-align: center;
+    padding-bottom: 40px;
+  }
+
+  .text {
+    padding-left: 0;
+  }
+
+  #left {
+    text-align: center;
+    border: 3px solid rgba(128, 128, 128, 0.641);
+    margin-bottom: 50px;
+  }
+
+  #right {
+    text-align: center;
+    border: 3px solid rgba(128, 128, 128, 0.641);
+    margin-bottom: 50px;
+    margin-left: 40px;
+  }
+
+  .row {
+    row-gap: 0px;
+    column-gap: 50px;
+    margin-left: 0%;
+    margin-right: 0%;
+    justify-content: center;
+  }
+
+  #cliffspic {
+    margin-bottom: 30px;
+  }
+
+  footer #nondisclaimer .copy {
+    padding: 3.5em 0em 3.5em 0em;
+    text-align: center;
+    float: none;
+    font-size: 0.9em;
+  }
+  footer #nondisclaimer .social {
+    padding: 2.5em 0;
+    margin: 0;
+    text-align: center;
+    float: none;
+  }
+}
+
+/* @media Q's */
+
+@media (max-width: 1024px) {
+  #home {
+    background: no-repeat white url(images/cliff_ocean.jpg);
+    background-size: 100% 400px;
+  }
+
+  #contact1 {
+    background: no-repeat white url(images/cliff_rock.jpg);
+    background-size: 100% 400px;
+  }
+
+  #contact {
+    background: no-repeat white url(images/forest_cliff.jpg);
+    background-size: 100% 400px;
+  }
+
+  #activities {
+    background: no-repeat white url(images/runfly.jpg);
+    background-size: 100% 579px;
+  }
+
+  /* Styling for main content at this resolution */
+
+  header {
+    width: 100%;
+    min-height: 443px;
+  }
+
+  /*Responsive Headers*/
+
+  #pg1 {
+    width: 100%;
+    min-height: 260px;
+  }
+
+  #pg2 {
+    min-height: 260px;
+  }
+
+  #pg3 {
+  }
+
+  #pg4 {
+    min-height: 250px;
+  }
+  /* <------------------------------------------------------------------------------------------------------------------------------->  */
+
+  .main-header {
+    width: 55%;
+  }
+
+  .container-fluid {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .logo img {
+    position: relative;
+    bottom: 8px;
+  }
+  .main-menu {
+    background-color: rgba(255, 255, 255, 0);
+  }
+
+  .main-menu ul li {
+    background-color: rgba(38, 41, 61, 0.597);
+    z-index: 10;
+  }
+  #navbarContent {
+    text-align: left;
+    float: right;
+  }
+
+  #title {
+    text-align: center;
+    padding-bottom: 40px;
+  }
+
+  .text {
+    padding-left: 0;
+  }
+
+  #left {
+    text-align: center;
+    border: 3px solid rgba(128, 128, 128, 0.641);
+    margin-bottom: 50px;
+  }
+
+  #right {
+    text-align: center;
+    border: 3px solid rgba(128, 128, 128, 0.641);
+    margin-bottom: 50px;
+    margin-left: 40px;
+  }
+
+  .row {
+    justify-content: center;
+    row-gap: 20px;
+    column-gap: 2px;
+    padding-bottom: 30px;
+    margin-right: 0;
+    padding-left: 1%;
+  }
+
+  footer #nondisclaimer .copy {
+    padding: 3.5em 0em 3.5em 0em;
+    text-align: center;
+    float: none;
+    font-size: 0.9em;
+  }
+  footer #nondisclaimer .social {
+    padding: 2.5em 0;
+    margin: 0;
+    text-align: center;
+    float: none;
+  }
+}
+
+/*iPad & beyond Sizing 992*/
+
+@media (max-width: 992px) {
+  header {
+    width: 100%;
+    min-height: 300px;
+  }
+
+  /*Responsive Headers*/
+
+  #pg1 {
+    width: 100%;
+    min-height: 260px;
+  }
+
+  #pg2 {
+  }
+
+  #pg3 {
+  }
+
+  #pg4 {
+    min-height: 220px;
+  }
+  /* <------------------------------------------------------------------------------------------------------------------------------->  */
+
+  .logo img {
+    position: relative;
+    bottom: 8px;
+  }
+  .main-menu {
+    background-color: rgba(255, 255, 255, 0);
+    position: absolute;
+    padding-top: 20px;
+  }
+  .main-menu ul li {
+    border-bottom: 1px solid rgb(252, 254, 252);
+    background-color: rgba(38, 41, 61, 0.7);
+    z-index: 10;
+  }
+  #navbarContent {
+    text-align: left;
+    margin-left: -100px;
+    margin-top: 45px;
+  }
+
+  /* Styling for main content at this resolution */
+
+  #title {
+    text-align: center;
+    padding-bottom: 40px;
+  }
+
+  .container-fluid {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #left {
+    text-align: center;
+    border: 3px solid rgba(128, 128, 128, 0.641);
+    margin-bottom: 50px;
+    padding-bottom: 100px;
+    margin-left: 40px;
+  }
+
+  #right {
+    text-align: center;
+    border: 3px solid rgba(128, 128, 128, 0.641);
+    margin-bottom: 50px;
+    margin-left: 40px;
+  }
+
+  footer #nondisclaimer .copy {
+    padding: 3.5em 0em 3.5em 0em;
+    text-align: center;
+    float: none;
+    font-size: 0.9em;
+  }
+  footer #nondisclaimer .social {
+    padding: 2.5em 0;
+    margin: 0;
+    text-align: center;
+    float: none;
+  }
+}
+
+/* iPad mini 768 */
+
+@media (max-width: 768px) {
+  header {
+    width: 100%;
+    min-height: 400px;
+  }
+
+  /*Responsive Headers*/
+
+  #pg1 {
+    width: 100%;
+    min-height: 260px;
+  }
+
+  #pg2 {
+    min-height: 220px;
+  }
+
+  #pg3 {
+  }
+
+  #pg4 {
+    min-height: 220px;
+  }
+  /* <------------------------------------------------------------------------------------------------------------------------------->  */
+
+  .main-header {
+    margin: 2em auto 0 auto;
+    min-height: 100px;
+    height: 100px;
+    min-width: 100%;
+  }
+
+  .logo img {
+    position: relative;
+    bottom: 8px;
+  }
+  .main-menu {
+    background-color: rgba(255, 255, 255, 0);
+    position: absolute;
+    padding-top: 20px;
+    padding-left: 650px;
+  }
+  .main-menu ul li {
+    border-bottom: 1px solid rgba(202, 204, 202, 0.6);
+    background-color: rgba(38, 41, 61, 0.7);
+  }
+
+  .text {
+    padding-left: 0;
+  }
+
+  #navbarContent {
+    text-align: left;
+    margin-left: -100px;
+    margin-top: 45px;
+  }
+
+  /* Main Content */
+
+  main {
+    padding: 3em 1em 3em 1em;
+    margin: 0;
+  }
+  #home .main-col-content {
+    padding: 25px;
+    min-height: 450px;
+    margin-top: 1em;
+  }
+
+  .grid-item {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    width: 60%;
+    margin-left: 1%;
+  }
+
+  .container-fluid {
+    justify-content: center;
+  }
+
+  footer #nondisclaimer .copy {
+    padding: 3.5em 0em 3.5em 0em;
+    text-align: center;
+    float: none;
+    font-size: 0.9em;
+  }
+  footer #nondisclaimer .social {
+    padding: 2.5em 0;
+    margin: 0;
+    text-align: center;
+    float: none;
+  }
+}
+
+/* iPhone Sizing X and above 425 */
+
+@media (max-width: 426px) {
+  header {
+    width: 100%;
+    min-height: 300px;
+  }
+
+  /*Responsive Headers*/
+
+  #pg1 {
+    width: 100%;
+    min-height: 260px;
+  }
+
+  #pg2 {
+    min-height: 220px;
+  }
+
+  #pg3 {
+    min-height: 400px;
+  }
+
+  #pg4 {
+    min-height: 220px;
+  }
+  /* <------------------------------------------------------------------------------------------------------------------------------->  */
+
+  .main-header {
+    margin: 2em auto 0 auto;
+    min-height: 100px;
+    height: 100px;
+    min-width: 100%;
+  }
+
+  .logo img {
+    position: relative;
+    bottom: 8px;
+  }
+  .main-menu {
+    background-color: rgba(255, 255, 255, 0);
+    position: absolute;
+    padding-left: 325px;
+    padding-top: 20px;
+  }
+  .main-menu ul li {
+    border-bottom: 1px solid rgba(202, 204, 202, 0.6);
+    background-color: rgba(38, 41, 61, 0.7);
+  }
+
+  #navbarContent {
+    text-align: left;
+    margin-top: 45px;
+  }
+
+  /* main content */
+  main {
+    padding: 3em 1em 3em 1em;
+    margin: 0;
+  }
+  #home .main-col-content {
+    padding: 25px;
+    min-height: 450px;
+    margin-top: 1em;
+  }
+
+  #title {
+    padding-bottom: 25px;
+    text-align: center;
+    padding-left: 0;
+  }
+  #left {
+    text-align: center;
+    border: 3px solid rgba(128, 128, 128, 0.641);
+    margin-bottom: 15px;
+    padding-bottom: 100px;
+    margin-left: 2px;
+  }
+
+  #right {
+    text-align: center;
+    border: 3px solid rgba(128, 128, 128, 0.641);
+    margin-bottom: 15px;
+    margin-left: 2px;
+  }
+  .text {
+    padding-left: 0;
+  }
+
+  #part {
+    padding-left: 17px;
+    width: 100%;
+  }
+
+  footer #nondisclaimer .copy {
+    padding: 3.5em 0em 3.5em 0em;
+    text-align: center;
+    float: none;
+    font-size: 0.9em;
+  }
+  footer #nondisclaimer .social {
+    padding: 2.5em 0;
+    margin: 0;
+    text-align: center;
+    float: none;
+  }
+}
+
+/* iPhone Sizing SE and below 375 */
+
+@media (max-width: 376px) {
+  header {
+    width: 100%;
+    min-height: 200px;
+  }
+
+  /*Responsive Headers*/
+
+  #pg1 {
+    width: 100%;
+    min-height: 200px;
+  }
+
+  #pg2 {
+  }
+
+  #pg3 {
+  }
+
+  #pg4 {
+  }
+  /* <------------------------------------------------------------------------------------------------------------------------------->  */
+
+  .main-header {
+    margin: 2em auto 0 auto;
+    min-height: 100px;
+    height: 100px;
+    min-width: 100%;
+  }
+
+  #home {
+    background: no-repeat white url(images/cliff_ocean.jpg);
+    background-size: 100% 375px;
+    width: 378px;
+  }
+
+  #activities {
+    background: no-repeat white url(images/runfly.jpg);
+    background-size: 100% 375px;
+  }
+
+  .logo img {
+    position: relative;
+    bottom: 8px;
+  }
+  .main-menu {
+    background-color: rgba(255, 255, 255, 0);
+    position: absolute;
+    padding-left: 279px;
+    padding-top: 20px;
+  }
+  .main-menu ul li {
+    border-bottom: 1px solid rgba(202, 204, 202, 0.6);
+    background-color: rgba(38, 41, 61, 0.7);
+  }
+
+  #navbarContent {
+    text-align: left;
+    margin-left: -100px;
+    margin-top: 45px;
+  }
+
+  #home .main-col-content {
+    padding: 25px;
+    min-height: 450px;
+    margin-top: 1em;
+  }
+
+  #title {
+    padding-bottom: 25px;
+    padding-left: 18px;
+    padding-top: 70px;
+    text-align: center;
+  }
+
+  h1 {
+    padding-left: 80px;
+  }
+
+  #contactingUs {
+    text-align: center;
+    padding-left: 0;
+  }
+  #left {
+    text-align: center;
+    border: 3px solid rgba(128, 128, 128, 0.641);
+    margin-bottom: 15px;
+    padding-bottom: 100px;
+    margin-left: 0px;
+  }
+
+  #right {
+    text-align: center;
+    border: 3px solid rgba(128, 128, 128, 0.641);
+    margin-bottom: 50px;
+    margin-left: 0px;
+  }
+  .text {
+    padding-left: 0;
+  }
+
+  #cliffspic {
+    padding-bottom: 30px;
+  }
+
+  #cliffindividual {
+    margin-bottom: 20px;
+  }
+
+  #cliffstext {
+    padding-bottom: 30px;
+  }
+
+  p {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  footer #nondisclaimer .copy {
+    padding: 3.5em 0em 3.5em 0em;
+    text-align: center;
+    float: none;
+    font-size: 0.9em;
+  }
+  footer #nondisclaimer .social {
+    padding: 2.5em 0;
+    margin: 0;
+    text-align: center;
+    float: none;
+  }
+}
+
+/* resolution 320 */
+
+@media (max-width: 320px) {
+  /*Responsive Headers*/
+
+  #pg1 {
+    width: 100%;
+    min-height: 260px;
+  }
+
+  #pg2 {
+    min-height: 250px;
+  }
+
+  #pg3 {
+  }
+
+  #pg4 {
+  }
+  /* <------------------------------------------------------------------------------------------------------------------------------->  */
+
+  .main-header {
+    margin: 2em auto 0 auto;
+    min-height: 100px;
+    height: 100px;
+  }
+
+  #home {
+    background: no-repeat white url(images/cliff_ocean.jpg);
+    background-size: 380px 380px;
+    width: 380px;
+  }
+
+  #contact1 {
+    background: no-repeat white url(images/cliff_rock.jpg);
+    background-size: 380px 380px;
+    width: 380px;
+  }
+
+  #contact {
+    background: no-repeat white url(images/cliff-north-mountain.jpg);
+    background-size: 380px 380px;
+    width: 380px;
+  }
+
+  #activities {
+    background: no-repeat white url(images/runfly.jpg);
+    background-size: 380px 380px;
+    width: 380px;
+  }
+
+  .logo img {
+    position: relative;
+    bottom: 8px;
+  }
+  .main-menu {
+    background-color: rgba(255, 255, 255, 0);
+    position: absolute;
+    padding-left: 300px;
+    padding-top: 20px;
+  }
+  .main-menu ul li {
+    border-bottom: 1px solid rgba(202, 204, 202, 0.6);
+    background-color: rgba(38, 41, 61, 0.7);
+  }
+
+  #navbarContent {
+    text-align: left;
+    margin-left: -100px;
+    margin-top: 45px;
+  }
+
+  /* <------------------------------------------------------------------------------------------------------------------------------->  */
+
+  /* Main content */
+
+  main {
+    padding: 3em 1em 3em 1em;
+    margin: 0;
+    text-align: center;
+  }
+  #home .main-col-content {
+    padding: 25px;
+    min-height: 450px;
+    margin-top: 1em;
+  }
+
+  h1 {
+    padding-left: 7px;
+  }
+
+  p {
+    padding-left: 7px;
+  }
+  #title {
+    padding-bottom: 25px;
+    padding-left: 5px;
+    padding-top: 1px;
+    text-align: center;
+  }
+
+  #left {
+    border: 3px solid rgba(128, 128, 128, 0.641);
+    margin-bottom: 15px;
+    padding-bottom: 100px;
+    margin-left: 0px;
+  }
+
+  #right {
+    text-align: center;
+    border: 3px solid rgba(128, 128, 128, 0.641);
+    margin-bottom: 50px;
+    margin-left: 0px;
+  }
+
+  .text {
+    padding-left: 0;
+  }
+
+  #cliffspic {
+    padding-bottom: 30px;
+  }
+
+  #cliffindividual {
+    margin-bottom: 20px;
+  }
+
+  #cliffstext {
+    padding-bottom: 30px;
+  }
+
+  .title {
+    margin-left: 0;
+  }
+
+  /* <------------------------------------------------------------------------------------------------------------------------------->  */
+
+  /* partners and footer */
+
+  footer #nondisclaimer .copy {
+    padding: 3.5em 0em 3.5em 0em;
+    text-align: center;
+    float: none;
+    font-size: 0.9em;
+  }
+  footer #nondisclaimer .social {
+    padding: 2.5em 0;
+    margin: 0;
+    text-align: center;
+    float: none;
+  }
+}
