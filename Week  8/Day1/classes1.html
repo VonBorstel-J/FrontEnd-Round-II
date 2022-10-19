@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Function as Class</h2>
+
+<script> 
+
+function Person() {
+    this.firstName = "unknown";
+    this.lastName = "unknown";
+}
+
+//Create object 1
+var person1 = new Person(); 
+person1.firstName = "Steve";
+person1.lastName = "Jobs";
+            
+alert(person1.firstName+ "" +person1.lastName);
+
+//Create object 2
+var person2 = new Person();
+person2.firstName = "Bill"; 
+person2.lastName = "Gates"; 
+            
+alert(person2.firstName + " " + person2.lastName);
+
+</script>
+
+
+</body>
+</html>
