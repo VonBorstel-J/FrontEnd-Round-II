@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VUE Demo</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+  </head>
+  <body>
+    <div id="databinding">
+      <div v-changestyle>VueJS Directive</div>
+    </div>
+
+    <script>
+      Vue.directive("changestyle", {
+        bind(e1, binding, vnode) {
+          console.log(e1);
+          e1.style.color = "red";
+          e1.style.fontSize = "30px";
+        },
+      });
+      var vm = new Vue({
+        el: "#databinding",
+        data: {},
+        methods: {},
+      });
+    </script>
+  </body>
+</html>

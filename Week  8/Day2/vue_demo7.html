@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VUE Demo</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+  </head>
+  <body>
+    <div id="databinding">
+      <button v-on:click="showdata" v-bind:style="styleobj">Click</button>
+      <span style="font-size: 25px"
+        ><b> Main heading showing: {{show}}</b></span
+      >
+      <h1 v-if="show">This is a main heading</h1>
+      <h2>This is a sub heading</h2>
+    </div>
+
+    <script>
+      var vm = new Vue({
+        el: "#databinding",
+        data: {
+          show: true,
+          styleobj: {
+            backgroundColor: "#2196F3!important",
+            cursor: "pointer",
+            padding: "8px 16px",
+            verticalAlign: "middle",
+          },
+        },
+        methods: {
+          showdata: function () {
+            this.show = !this.show;
+          },
+        },
+      });
+    </script>
+  </body>
+</html>

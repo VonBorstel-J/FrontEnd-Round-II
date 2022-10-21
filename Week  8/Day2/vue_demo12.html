@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VUE Demo</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+  </head>
+  <body>
+    <div id="demo">
+      <p v-for="name in taNames">{{ name.TA }}</p>
+    </div>
+
+    <script>
+      new Vue({
+        el: "#demo",
+        data: {
+          taNames: [
+            { TA: "Jonas" },
+            { TA: "Liz" },
+            { TA: "Chris" },
+            { TA: "Reshae" },
+            { TA: "Nico" },
+            { TA: "Ilya" },
+            { TA: "Yi" },
+          ],
+        },
+      });
+    </script>
+  </body>
+</html>
