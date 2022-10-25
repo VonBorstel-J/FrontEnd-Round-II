@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Food Blog</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      #leftside {
+        float: left;
+        width: 30%;
+        min-height: 1200px;
+        background-color: rgb(77, 192, 154);
+      }
+      #rightside {
+        float: left;
+        width: 70%;
+        min-height: 1200px;
+        background-color: rgb(238, 226, 192);
+        position: relative;
+      }
+      #container {
+        background-color: rgba(255, 255, 255, 0.85);
+        position: absolute;
+        top: 15%;
+        left: 15%;
+        min-width: 1100px;
+        min-height: 1050px;
+        border-radius: 0.7em;
+      }
+      header {
+        height: 50px;
+        background-color: rgba(231, 229, 229, 0.5);
+        font-size: 2.75em;
+        padding: 0.5em;
+        color: rgb(216, 150, 7);
+      }
+      header span {
+        font-family: "Sacramento", cursive;
+      }
+      main {
+        position: relative;
+      }
+      main h2 {
+        position: absolute;
+        left: 20%;
+        top: 30px;
+        margin: 25px 0 200px 50px;
+        color: rgb(60, 190, 160);
+        text-transform: uppercase;
+      }
+      main #photos img {
+        margin: 0.75em;
+        border: 0.85em solid rgb(255, 255, 255);
+      }
+      section#blogposts {
+        position: absolute;
+        left: 20%;
+        top: 70px;
+        padding: 50px;
+      }
+      main .post {
+        margin: 25px;
+        padding: 25px;
+        border: 2px solid rgba(83, 78, 58, 0.6);
+        border-radius: 0.5em;
+      }
+      footer {
+        position: absolute;
+        bottom: -20px;
+        height: 50px;
+        width: 100%;
+        text-align: center;
+        font-size: 0.85em;
+      }
+      /* avatar image */
+      img {
+        width: 5%;
+        height: 4%;
+      }
+    </style>
+  </head>
+  <body>
+    <aside id="leftside"></aside>
+    <aside id="rightside"></aside>
+    <div id="container">
+      <!-- <header><span>Food Blog</span></header> -->
+      <blogoob></blogoob>
+
+      <main>
+        <aside id="photos">
+          <img src="/Day1HW/images/chili.jpg" alt="White Chicken Chili" width="180" />
+        </aside>
+
+        <!-- <h2>Comments</h2> -->
+        <commentsoob></commentsoob>
+
+        <section id="blogposts">
+          <div class="post">
+            <img
+              v-on:click="isHidden1=false"
+              src="/Day2HW/profile.png"
+              alt=""
+              style="cursor: pointer"
+            />
+            <span class="author">{{ post1.author }}</span> —
+            <span class="date"> {{ post1.date }} </span>
+            <span class="reply">REPLY</span>
+            <p>{{ post1.message }}</p>
+          </div>
+          <div
+            v-if="!isHidden1"
+            style="
+              width: 30%;
+              height: auto;
+              background-color: black;
+              border-radius: 15px;
+              position: absolute;
+              margin-left: 20%;
+              margin-top: -200px;
+            "
+          >
+            <p
+              v-on:click="isHidden1=true"
+              style="
+                text-align: right;
+                cursor: pointer;
+                color: white;
+                margin-right: 10px;
+              "
+            >
+              x
+            </p>
+            <h3 style="color: white; margin-left: 20px; margin-right: 15px">
+              {{ post1.author }}
+            </h3>
+            <h4
+              style="
+                color: white;
+                display: inline-block;
+                margin-left: 20px;
+                margin-right: 15px;
+              "
+            >
+              Foodie Level:
+            </h4>
+            <span style="color: white">{{ post1.foodie }}</span>
+            <h4 style="color: white; margin-left: 20px; margin-right: 15px">
+              Bio:
+            </h4>
+            <p style="color: white; margin-left: 20px; margin-right: 15px">
+              {{ post1.bio }}
+            </p>
+            <br />
+            <button
+              v-on:click="isHidden1=true"
+              style="margin-bottom: 20px; margin-left: 20px; cursor: pointer"
+            >
+              Close
+            </button>
+          </div>
+
+          <div class="post">
+            <img
+              v-on:click="isHidden2=false"
+              src="/Day2HW/profile.png"
+              alt=""
+              style="cursor: pointer"
+            />
+            <span class="author">{{ post2.author }}</span> —
+            <span class="date"> {{ post2.date }}</span>
+            <span class="reply">REPLY</span>
+            <p>{{ post2.message }}</p>
+          </div>
+          <div
+            v-if="!isHidden2"
+            style="
+              width: 30%;
+              height: auto;
+              background-color: black;
+              border-radius: 15px;
+              position: absolute;
+              margin-left: 20%;
+              margin-top: -200px;
+            "
+          >
+            <p
+              v-on:click="isHidden2=true"
+              style="
+                text-align: right;
+                cursor: pointer;
+                color: white;
+                margin-right: 10px;
+              "
+            >
+              x
+            </p>
+            <h3 style="color: white; margin-left: 20px; margin-right: 15px">
+              {{ post2.author }}
+            </h3>
+            <h4
+              style="
+                color: white;
+                display: inline-block;
+                margin-left: 20px;
+                margin-right: 15px;
+              "
+            >
+              Foodie Level:
+            </h4>
+            <span style="color: white">{{ post2.foodie }}</span>
+            <h4 style="color: white; margin-left: 20px; margin-right: 15px">
+              Bio:
+            </h4>
+            <p style="color: white; margin-left: 20px; margin-right: 15px">
+              {{ post2.bio }}
+            </p>
+            <br />
+            <button
+              v-on:click="isHidden2=true"
+              style="margin-bottom: 20px; margin-left: 20px; cursor: pointer"
+            >
+              Close
+            </button>
+          </div>
+
+          <div class="post">
+            <img
+              v-on:click="isHidden3=false"
+              src="/Day2HW/profile.png"
+              alt=""
+              style="cursor: pointer"
+            />
+            <span class="author">{{ post3.author }}</span> —
+            <span class="date">{{ post3.date }}</span>
+            <span class="reply">REPLY</span>
+            <p>{{ post3.message }}</p>
+          </div>
+          <div
+            v-if="!isHidden3"
+            style="
+              width: 30%;
+              height: auto;
+              background-color: black;
+              border-radius: 15px;
+              position: absolute;
+              margin-left: 20%;
+              margin-top: -200px;
+            "
+          >
+            <p
+              v-on:click="isHidden3=true"
+              style="
+                text-align: right;
+                cursor: pointer;
+                color: white;
+                margin-right: 10px;
+              "
+            >
+              x
+            </p>
+            <h3 style="color: white; margin-left: 20px; margin-right: 15px">
+              {{ post3.author }}
+            </h3>
+            <h4
+              style="
+                color: white;
+                display: inline-block;
+                margin-left: 20px;
+                margin-right: 15px;
+              "
+            >
+              Foodie Level:
+            </h4>
+            <span style="color: white">{{ post3.foodie }}</span>
+            <h4 style="color: white; margin-left: 20px; margin-right: 15px">
+              Bio:
+            </h4>
+            <p style="color: white; margin-left: 20px; margin-right: 15px">
+              {{ post3.bio }}
+            </p>
+            <br />
+            <button
+              v-on:click="isHidden3=true"
+              style="margin-bottom: 20px; margin-left: 20px; cursor: pointer"
+            >
+              Close
+            </button>
+          </div>
+
+          <div class="post">
+            <img
+              v-on:click="isHidden4=false"
+              src="/Day2HW/profile.png"
+              alt=""
+              style="cursor: pointer"
+            />
+            <span class="author">{{ post4.author }}</span> —
+            <span class="date">{{ post4.date }}</span>
+            <span class="reply">REPLY</span>
+            <p>{{ post4.message }}</p>
+          </div>
+          <div
+            v-if="!isHidden4"
+            style="
+              width: 30%;
+              height: auto;
+              background-color: black;
+              border-radius: 15px;
+              position: absolute;
+              margin-left: 20%;
+              margin-top: -400px;
+            "
+          >
+            <p
+              v-on:click="isHidden4=true"
+              style="
+                text-align: right;
+                cursor: pointer;
+                color: white;
+                margin-right: 10px;
+              "
+            >
+              x
+            </p>
+            <h3 style="color: white; margin-left: 20px; margin-right: 15px">
+              {{ post4.author }}
+            </h3>
+            <h4
+              style="
+                color: white;
+                display: inline-block;
+                margin-left: 20px;
+                margin-right: 15px;
+              "
+            >
+              Foodie Level:
+            </h4>
+            <span style="color: white">{{ post4.foodie }}</span>
+            <h4 style="color: white; margin-left: 20px; margin-right: 15px">
+              Bio:
+            </h4>
+            <p style="color: white; margin-left: 20px; margin-right: 15px">
+              {{ post4.bio }}
+            </p>
+            <br />
+            <button
+              v-on:click="isHidden4=true"
+              style="margin-bottom: 20px; margin-left: 20px; cursor: pointer"
+            >
+              Close
+            </button>
+          </div>
+        </section>
+      </main>
+
+      <footer>&copy; Copyright FOOD BLOG</footer>
+    </div>
+
+    <script>
+      var blog = {
+        template: "<header><span>Food Blog</span></header>",
+      };
+
+      var comments = {
+        template: "<h2>Comments</h2>",
+      };
+
+      class Post {
+        constructor(author, date, foodie, bio, message) {
+          // this.avatarPath = './images/profile.png';
+          this.author = author;
+          this.date = date;
+          this.message = message;
+          this.foodie = foodie;
+          this.bio = bio;
+        }
+      }
+
+      var app1 = new Vue({
+        el: "#container",
+        data: {
+          post1: new Post(
+            "Brianna",
+            "February 18, 2021 @ 3:30 pm",
+            "Novoice",
+            "Food enthusiast. Love to cook and experiment. Into only organic, fat free, sugar free stuffs!",
+            "Was amazing! My Walmart didn’t have coriander in stock and didn’t have ground cumin. I used serrano instead of jalapeño. It was just like my favorite tortilla soup from BJs. I am sending this recipe to my family. I want everyone to try it!"
+          ),
+          post2: new Post(
+            "LINH",
+            "February 15, 2021 @ 9:46 am",
+            "Newcomer",
+            "Love food! Grew up with meat and potatoes. Recently venture outside my comfort zone. Loving everything I have been eating so far. Thai is my favorite at this time.",
+            "I just made this soup today and it’s so tasty! didn’t have corn at home but still turned out very good.  It’s a winner!  I made beef chili for my parents; but since my dad has gout he can’t eat beef; this white chicken chili is perfect for him.  Thank you Lisa!"
+          ),
+          post3: new Post(
+            "CATHERINE LEONARDO",
+            "February 13, 2021 @ 12:58 pm",
+            "Mentor",
+            "I have to say I never was the adventurous type until 2 years ago. My boyfriend, who is of Japanese background, exposed me to other cultural food and I have never look back since!",
+            "I LOVE this White Chicken Chili! You are right, it is satiating meal—delicious with toasted bread. Refreshingly different taste than any chicken chili I’ve made in the past. I made it exactly as written and added some chopped zucchini, carrots, and celery. Instead of shredding the chicken, I chopped it into small pieces. It freezes very well. Will be an all-time favorite, for sure."
+          ),
+          post4: new Post(
+            "KALI",
+            "February 13, 2021 @ 11:31 am",
+            "Novice",
+            "Food is my passion. So is cooking. I love to experiment and try new things. I have to admit I'm a food whore! Invite me over for dinner and I'll be there!",
+            "This recipe is dynamite! My partner usually won’t eat beans but he finished the whole pot (darn was hoping to have some for leftovers haha). This is crowd-pleaser that I am going to add to my regular recipe rotation. Thanks so much, Lisa!"
+          ),
+          isHidden1: true,
+          isHidden2: true,
+          isHidden3: true,
+          isHidden4: true,
+        },
+        components: {
+          blogoob: blog,
+          commentsoob: comments,
+        },
+      });
+
+      // add tooltips for each author:
+    </script>
+  </body>
+</html>
